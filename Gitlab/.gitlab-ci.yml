@@ -1,0 +1,23 @@
+executar_teste:
+  stage: teste
+  before_script:
+    - echo "Preparando testes"
+  script:
+    - echo "Executando testes"
+  after_script:
+    - echo "Apagando arquivos temporarios"
+
+criar_imagens:
+  stage: build
+  script:
+    - echo "Criando imagens"
+
+push_imagens:
+  stage: build
+  script:
+    - echo "Realizando upload de imagnes"
+
+kubernetes:
+  stage: deploy
+  script:
+    - echo "Executando deploy"
