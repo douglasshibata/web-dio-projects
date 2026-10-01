@@ -1,6 +1,16 @@
 # Compiled class file
 *.class
 
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+
+# Ransomware challenge outputs
+*.ransomwaretroll
+
+# macOS metadata
+.DS_Store
+
 # Log file
 *.log
 
